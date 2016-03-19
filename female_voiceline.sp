@@ -43,13 +43,27 @@ public OnMapStart()
 
 public Action:MySoundHook(clients[64], &numClients, String:sample[PLATFORM_MAX_PATH], &entity, &channel, &Float:volume, &level, &pitch, &flags)
 {
-	if (StrContains(sample, "vo/", false) != -1)
+	new String:buffer_full[PLATFORM_MAX_PATH];
+	if (StrContains(sample, "vo/", false) != -1)	// if voiceline
 	{
-		ReplaceString(sample, 255, "vo/", "female/");
-		ReplaceString(sample, 255, ".mp3", ".wav");
-		PrintToServer(sample);
-		PrecacheSound(sample, true);
-		return Plugin_Changed;
+		//PrintToServer(entity);
+		if(GetClientTeam(entity) == 2)	//If red team
+		{
+			ReplaceString(sample, 255, "vo/", "female/");
+			ReplaceString(sample, 255, ".mp3", ".wav");
+
+			Format(buffer_full, sizeof(buffer_full), "sound/%s", sample);
+			PrintToServer(buffer_full);
+			if (FileExists(buffer_full,true))
+        	{
+				PrecacheSound(sample, true);
+				return Plugin_Changed;
+			}
+			else
+			{
+				PrintToServer("Sound File '%s' does not exist, playing Original",buffer_full);
+			}
+		}
 	}
 	return Plugin_Continue;
 }
