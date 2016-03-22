@@ -1,0 +1,7 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui\class_sel_sm_spy_blu"
+	"$translucent" 1
+	"$ignorez" 1
+	"$vertexalpha" 1
+}
