@@ -11,9 +11,12 @@ RED Team play as Female equivalent of their current class.
 ###Prerequisites
 - [Sourcemod](https://www.sourcemod.net/)
 - [TF2 Model Manager](https://forums.alliedmods.net/showthread.php?t=164630)
+- [SM Downloader](https://forums.alliedmods.net/showthread.php?t=69005)
 
 ###Installation
 Extract the Zip in your server directory and restart it.
+
+**WARNING** Check the downloads.ini file if you don't want it to be erased
 
 ##What works
 - Players models for Scout, Medic, Heavy, Spy, Sniper and Engineer.
