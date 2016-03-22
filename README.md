@@ -1,6 +1,8 @@
 # Mann VS Ladies
 A Team Fortress 2 Server Mod for playing as a Female Mercenary.
 
+[![Mann VS Ladies](https://img.youtube.com/vi/wBzeDK8_gHo/0.jpg)](https://www.youtube.com/watch?v=wBzeDK8_gHo)
+
 ##Concept
 BLU Team are still Mann mercenaries (No change).
 
