@@ -11,7 +11,7 @@ RED Team play as Female equivalent of their current class.
 ###Prerequisites
 - Sourcemod
 
-###Instalation
+###Installation
 Extract the Zip in your server directory and restart it.
 
 ##What works
